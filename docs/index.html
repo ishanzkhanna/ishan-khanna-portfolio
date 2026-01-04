@@ -17,27 +17,47 @@
       font-family: Arial, Helvetica, sans-serif;
       background: var(--bg);
       color: #222;
-      line-height: 1.6;
+      line-height: 1.55;
       scroll-behavior: smooth;
     }
 
     header {
       background: linear-gradient(135deg, var(--primary), #133b6f);
       color: #fff;
-      padding: 70px 20px;
+      padding: 55px 20px; /* reduced */
       text-align: center;
-      animation: fadeDown 0.8s ease;
+      animation: fadeDown 0.6s ease;
     }
 
     header h1 {
-      font-size: 38px;
-      margin-bottom: 10px;
+      font-size: 36px;
+      margin-bottom: 8px;
     }
 
     header p {
-      font-size: 18px;
+      font-size: 17px;
       max-width: 900px;
       margin: auto;
+    }
+
+    .cta {
+      margin-top: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #ffffff;
+      color: var(--primary);
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #e5edff;
+      transform: translateY(-2px);
     }
 
     nav {
@@ -45,16 +65,16 @@
       position: sticky;
       top: 0;
       z-index: 100;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
     }
 
     nav ul {
       list-style: none;
       display: flex;
       justify-content: center;
-      gap: 25px;
+      gap: 22px;
       margin: 0;
-      padding: 12px;
+      padding: 10px;
       flex-wrap: wrap;
     }
 
@@ -62,51 +82,53 @@
       text-decoration: none;
       color: var(--primary);
       font-weight: bold;
+      font-size: 15px;
     }
 
     section {
       max-width: 1100px;
       margin: auto;
-      padding: 70px 20px;
-      animation: fadeUp 0.7s ease;
+      padding: 45px 20px; /* reduced section spacing */
+      animation: fadeUp 0.6s ease;
     }
 
     h2 {
-      border-bottom: 4px solid var(--accent);
+      border-bottom: 3px solid var(--accent);
       display: inline-block;
-      padding-bottom: 6px;
-      margin-bottom: 35px;
-      font-size: 26px;
+      padding-bottom: 5px;
+      margin-bottom: 25px;
+      font-size: 24px;
     }
 
     .job, .skill-box {
       background: #fff;
-      padding: 25px;
+      padding: 22px;
       border-radius: 10px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 5px 14px rgba(0,0,0,0.08);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
     }
 
     .job:hover, .skill-box:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+      transform: translateY(-3px);
+      box-shadow: 0 9px 20px rgba(0,0,0,0.12);
     }
 
     .job {
-      margin-bottom: 25px;
+      margin-bottom: 18px; /* tighter */
     }
 
     .skills-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 18px;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 14px;
     }
 
     footer {
       background: var(--primary);
       color: #fff;
       text-align: center;
-      padding: 35px 20px;
+      padding: 25px 20px;
+      font-size: 14px;
     }
 
     footer a {
@@ -115,12 +137,12 @@
     }
 
     @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(20px); }
+      from { opacity: 0; transform: translateY(15px); }
       to { opacity: 1; transform: translateY(0); }
     }
 
     @keyframes fadeDown {
-      from { opacity: 0; transform: translateY(-20px); }
+      from { opacity: 0; transform: translateY(-15px); }
       to { opacity: 1; transform: translateY(0); }
     }
   </style>
@@ -131,10 +153,17 @@
 <header>
   <h1>Ishan Khanna</h1>
   <p>
-    Senior Data Engineer with 4+ years of experience (since Aug 2020) in building scalable data pipelines,
-    automating enterprise workflows, and improving data reliability using Azure, Spark, SQL, Python,
-    Airflow, and Google Cloud technologies.
+    Senior Data Engineer with <strong>5+ years of experience</strong> (since Aug 2020) in building
+    scalable data pipelines and enterprise automation using
+    <strong>PySpark, Spark-SQL, Apache Spark, Airflow, SQL, Python</strong>,
+    and cloud platforms across Azure and GCP.
   </p>
+
+  <div class="cta">
+    <a class="btn" href="resume/Ishan_Khanna_Resume.pdf" download>
+      ⬇ Download Resume (PDF)
+    </a>
+  </div>
 </header>
 
 <nav>
@@ -152,12 +181,12 @@
 
   <div class="job">
     <h3>Senior Data Engineer — IBM</h3>
-    <p><strong>Jan 2025 – Present | Gurgaon, India</strong></p>
+    <p><strong>Jan 2025 – Present | Noida, India</strong></p>
     <ul>
-      <li>Migrated month-end processing frameworks to Spark-SQL, improving scalability and reliability.</li>
-      <li>Strengthened data validation with robust pre- and post-processing quality checks.</li>
-      <li>Monitored and supported automated workflows on Linux/UNIX servers.</li>
-      <li>Collaborated with business stakeholders on critical process transition and decommissioning.</li>
+      <li>Migrated month-end processing frameworks to Spark-SQL and PySpark.</li>
+      <li>Improved scalability and reliability through enhanced validations.</li>
+      <li>Monitored automated workflows on Linux/UNIX servers.</li>
+      <li>Worked on critical process transition and decommissioning.</li>
     </ul>
   </div>
 
@@ -165,10 +194,9 @@
     <h3>Associate — Cognizant Technology Solutions</h3>
     <p><strong>Nov 2023 – Jan 2025 | Gurgaon, India</strong></p>
     <ul>
-      <li>Automated month-end processing using Python, Spark, and HQL execution sequencing.</li>
-      <li>Optimized performance using multithreading and parallel execution.</li>
-      <li>Built a metadata-driven search engine using TF-IDF and Word2Vec.</li>
-      <li>Worked closely with front-end and client teams for end-to-end delivery.</li>
+      <li>Automated month-end processing using Python, Spark, and HQL.</li>
+      <li>Optimized execution via multithreading and parallelism.</li>
+      <li>Built ML-powered metadata search using TF-IDF and Word2Vec.</li>
     </ul>
   </div>
 
@@ -176,9 +204,9 @@
     <h3>Associate Software Engineer II — Optum Global Solutions</h3>
     <p><strong>May 2022 – Sep 2023 | Noida, India</strong></p>
     <ul>
-      <li>Automated analytics workflows using Spark-SQL and Python.</li>
-      <li>Deployed ML models via Azure Data Factory.</li>
-      <li>Delivered automation resulting in cost savings exceeding $1.5M.</li>
+      <li>Designed PySpark and Spark-SQL pipelines.</li>
+      <li>Deployed ML models using Azure Data Factory.</li>
+      <li>Delivered automation saving $1.5M+.</li>
     </ul>
   </div>
 
@@ -186,9 +214,8 @@
     <h3>Business Analyst — EXL Services</h3>
     <p><strong>Aug 2020 – May 2022 | Noida, India</strong></p>
     <ul>
-      <li>Built analytical reports using Hive, PySpark, Python, and SAS.</li>
-      <li>Handled enterprise datasets across multiple formats and sources.</li>
-      <li>Led production runs and resolved operational issues.</li>
+      <li>Developed reports using Hive, PySpark, Python, and SAS.</li>
+      <li>Managed enterprise data sources and production runs.</li>
     </ul>
   </div>
 </section>
@@ -198,11 +225,11 @@
 
   <div class="skills-grid">
     <div class="skill-box">Python & SQL</div>
-    <div class="skill-box">Apache Spark & Hadoop</div>
-    <div class="skill-box">Apache Airflow & DAG Design</div>
+    <div class="skill-box">Apache Spark, PySpark & Spark-SQL</div>
+    <div class="skill-box">Apache Airflow & DAG Development</div>
     <div class="skill-box">Azure Data Factory & ML Studio</div>
     <div class="skill-box">BigQuery & Google Cloud Storage (GCS)</div>
-    <div class="skill-box">ETL, Data Pipelines & Lineage</div>
+    <div class="skill-box">ETL, Data Pipelines & Data Lineage</div>
     <div class="skill-box">Docker, Kubernetes & CI/CD</div>
     <div class="skill-box">Linux / UNIX Automation</div>
   </div>
@@ -211,9 +238,9 @@
 <section id="highlights">
   <h2>Key Highlights</h2>
   <ul>
-    <li>Enterprise-grade automation for month-end data processing</li>
-    <li>Metadata and ML-driven search platforms for data discovery</li>
-    <li>Cloud-native data engineering across Azure and GCP</li>
+    <li>Enterprise-grade month-end automation</li>
+    <li>Metadata and ML-driven data discovery platforms</li>
+    <li>Azure + GCP based data engineering solutions</li>
     <li>High-impact automation saving $1.5M+ annually</li>
   </ul>
 </section>
