@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ishan Khanna | Data Engineer</title>
+</head>
+<body>
+  <h1>Ishan Khanna</h1>
+  <p>Data Engineer | Azure | Spark | Python</p>
+
+  <h2>Projects</h2>
+  <ul>
+    <li>Data Lineage Discovery Tool</li>
+    <li>Azure ETL Automation</li>
+  </ul>
+
+  <h2>Contact</h2>
+  <p>LinkedIn | Email</p>
+</body>
+</html>

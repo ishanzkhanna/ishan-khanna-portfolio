@@ -1,0 +1,4 @@
+### Data Engineer
+- Designed scalable Spark pipelines processing large datasets
+- Built automated ETL workflows using Azure Data Factory
+- Handled production support and root cause analysis

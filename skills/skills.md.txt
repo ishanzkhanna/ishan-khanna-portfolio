@@ -1,0 +1,8 @@
+### Data Engineering
+ETL Pipelines, Data Modeling, Data Lineage, Data Quality
+
+### Cloud & Big Data
+Azure Data Factory, Azure Storage, Spark, Hadoop
+
+### DevOps
+Docker, Kubernetes, Jenkins, CI/CD

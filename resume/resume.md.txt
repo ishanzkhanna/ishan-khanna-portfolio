@@ -1,0 +1,17 @@
+ISHAN KHANNA  
+Data Engineer  
+
+SUMMARY  
+Data Engineer with 4+ years of experience in building scalable data pipelines, ETL systems, and cloud-based data platforms using Azure and Spark.
+
+SKILLS  
+Python, SQL, Apache Spark, Hadoop, Azure Data Factory, Azure Storage, Docker, Kubernetes, Jenkins, Git
+
+EXPERIENCE  
+Data Engineer  
+- Built ETL pipelines using Spark and Azure Data Factory  
+- Improved data reliability and reduced pipeline failures  
+- Supported production systems and issue resolution  
+
+CERTIFICATIONS  
+Microsoft Azure Data Engineer Associate
