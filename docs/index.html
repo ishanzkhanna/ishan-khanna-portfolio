@@ -6,29 +6,37 @@
   <title>Ishan Khanna | Senior Data Engineer</title>
 
   <style>
+    :root {
+      --primary: #0a2540;
+      --accent: #2563eb;
+      --bg: #f7f9fc;
+    }
+
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      background: #f7f9fc;
+      background: var(--bg);
       color: #222;
       line-height: 1.6;
+      scroll-behavior: smooth;
     }
 
     header {
-      background: #0a2540;
+      background: linear-gradient(135deg, var(--primary), #133b6f);
       color: #fff;
-      padding: 60px 20px;
+      padding: 70px 20px;
       text-align: center;
+      animation: fadeDown 0.8s ease;
     }
 
     header h1 {
+      font-size: 38px;
       margin-bottom: 10px;
-      font-size: 36px;
     }
 
     header p {
       font-size: 18px;
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
     }
 
@@ -37,68 +45,83 @@
       position: sticky;
       top: 0;
       z-index: 100;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     }
 
     nav ul {
       list-style: none;
       display: flex;
       justify-content: center;
+      gap: 25px;
       margin: 0;
-      padding: 10px;
-      gap: 20px;
+      padding: 12px;
+      flex-wrap: wrap;
     }
 
     nav a {
       text-decoration: none;
-      color: #0a2540;
+      color: var(--primary);
       font-weight: bold;
     }
 
     section {
-      max-width: 1000px;
+      max-width: 1100px;
       margin: auto;
-      padding: 60px 20px;
+      padding: 70px 20px;
+      animation: fadeUp 0.7s ease;
     }
 
     h2 {
-      border-bottom: 3px solid #0a2540;
+      border-bottom: 4px solid var(--accent);
       display: inline-block;
-      padding-bottom: 5px;
-      margin-bottom: 30px;
+      padding-bottom: 6px;
+      margin-bottom: 35px;
+      font-size: 26px;
+    }
+
+    .job, .skill-box {
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .job:hover, .skill-box:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+    }
+
+    .job {
+      margin-bottom: 25px;
     }
 
     .skills-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 15px;
-    }
-
-    .skill-box {
-      background: white;
-      padding: 15px;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-    }
-
-    .job {
-      background: white;
-      padding: 25px;
-      margin-bottom: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
     }
 
     footer {
-      background: #0a2540;
-      color: white;
+      background: var(--primary);
+      color: #fff;
       text-align: center;
-      padding: 30px 20px;
+      padding: 35px 20px;
     }
 
     footer a {
-      color: #90cdf4;
+      color: #93c5fd;
       text-decoration: none;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
@@ -108,8 +131,9 @@
 <header>
   <h1>Ishan Khanna</h1>
   <p>
-    Senior Data Engineer with 4+ years of experience building scalable data pipelines,
-    automating enterprise workflows, and improving data reliability using Azure, Spark, SQL, and Python.
+    Senior Data Engineer with 4+ years of experience (since Aug 2020) in building scalable data pipelines,
+    automating enterprise workflows, and improving data reliability using Azure, Spark, SQL, Python,
+    Airflow, and Google Cloud technologies.
   </p>
 </header>
 
@@ -117,7 +141,7 @@
   <ul>
     <li><a href="#experience">Experience</a></li>
     <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Highlights</a></li>
+    <li><a href="#highlights">Highlights</a></li>
     <li><a href="#education">Education</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
@@ -130,10 +154,10 @@
     <h3>Senior Data Engineer — IBM</h3>
     <p><strong>Jan 2025 – Present | Gurgaon, India</strong></p>
     <ul>
-      <li>Migrated month-end processing scripts to Spark-SQL, significantly improving automation.</li>
-      <li>Enhanced data reliability through advanced pre- and post-processing validations.</li>
-      <li>Managed and monitored automated tasks on Linux/UNIX servers.</li>
-      <li>Collaborated with business stakeholders to design tailored data solutions.</li>
+      <li>Migrated month-end processing frameworks to Spark-SQL, improving scalability and reliability.</li>
+      <li>Strengthened data validation with robust pre- and post-processing quality checks.</li>
+      <li>Monitored and supported automated workflows on Linux/UNIX servers.</li>
+      <li>Collaborated with business stakeholders on critical process transition and decommissioning.</li>
     </ul>
   </div>
 
@@ -141,10 +165,10 @@
     <h3>Associate — Cognizant Technology Solutions</h3>
     <p><strong>Nov 2023 – Jan 2025 | Gurgaon, India</strong></p>
     <ul>
-      <li>Automated month-end processing using Python and HQL sequencing.</li>
-      <li>Implemented multithreading to optimize execution time.</li>
+      <li>Automated month-end processing using Python, Spark, and HQL execution sequencing.</li>
+      <li>Optimized performance using multithreading and parallel execution.</li>
       <li>Built a metadata-driven search engine using TF-IDF and Word2Vec.</li>
-      <li>Worked closely with clients and front-end teams for end-to-end delivery.</li>
+      <li>Worked closely with front-end and client teams for end-to-end delivery.</li>
     </ul>
   </div>
 
@@ -152,9 +176,9 @@
     <h3>Associate Software Engineer II — Optum Global Solutions</h3>
     <p><strong>May 2022 – Sep 2023 | Noida, India</strong></p>
     <ul>
-      <li>Automated monitoring and training systems using ML models.</li>
-      <li>Saved over $1.5M by replacing manual workflows.</li>
-      <li>Designed Spark-SQL pipelines and deployed models via Azure Data Factory.</li>
+      <li>Automated analytics workflows using Spark-SQL and Python.</li>
+      <li>Deployed ML models via Azure Data Factory.</li>
+      <li>Delivered automation resulting in cost savings exceeding $1.5M.</li>
     </ul>
   </div>
 
@@ -162,8 +186,8 @@
     <h3>Business Analyst — EXL Services</h3>
     <p><strong>Aug 2020 – May 2022 | Noida, India</strong></p>
     <ul>
-      <li>Built and delivered analytical reports using Hive, PySpark, and Python.</li>
-      <li>Handled complex datasets across multiple enterprise sources.</li>
+      <li>Built analytical reports using Hive, PySpark, Python, and SAS.</li>
+      <li>Handled enterprise datasets across multiple formats and sources.</li>
       <li>Led production runs and resolved operational issues.</li>
     </ul>
   </div>
@@ -175,33 +199,35 @@
   <div class="skills-grid">
     <div class="skill-box">Python & SQL</div>
     <div class="skill-box">Apache Spark & Hadoop</div>
+    <div class="skill-box">Apache Airflow & DAG Design</div>
     <div class="skill-box">Azure Data Factory & ML Studio</div>
-    <div class="skill-box">ETL & Data Pipelines</div>
-    <div class="skill-box">Docker & Kubernetes</div>
+    <div class="skill-box">BigQuery & Google Cloud Storage (GCS)</div>
+    <div class="skill-box">ETL, Data Pipelines & Lineage</div>
+    <div class="skill-box">Docker, Kubernetes & CI/CD</div>
     <div class="skill-box">Linux / UNIX Automation</div>
-    <div class="skill-box">Jenkins, Git, JIRA</div>
-    <div class="skill-box">Data Validation & Quality</div>
   </div>
 </section>
 
-<section id="projects">
+<section id="highlights">
   <h2>Key Highlights</h2>
   <ul>
-    <li>Enterprise-grade month-end processing automation</li>
-    <li>Metadata-based search engine with ML-driven relevance</li>
-    <li>Cloud-native data pipelines using Spark and Azure</li>
-    <li>High-impact automation saving $1.5M+</li>
+    <li>Enterprise-grade automation for month-end data processing</li>
+    <li>Metadata and ML-driven search platforms for data discovery</li>
+    <li>Cloud-native data engineering across Azure and GCP</li>
+    <li>High-impact automation saving $1.5M+ annually</li>
   </ul>
 </section>
 
 <section id="education">
   <h2>Education</h2>
-  <p>Bachelor’s Degree — (Add your degree details here)</p>
+  <p><strong>MCA</strong> — Jamia Millia Islamia (2017 – 2020)</p>
+  <p><strong>BCA</strong> — Teerthanker Mahaveer University (2014 – 2017)</p>
 </section>
 
 <section id="contact">
   <h2>Contact</h2>
   <p>📍 Gurgaon, India</p>
+  <p>📞 Phone: +91 97585 99025</p>
   <p>📧 Email: your-email@example.com</p>
   <p>
     🔗 LinkedIn:
@@ -212,7 +238,7 @@
 </section>
 
 <footer>
-  <p>© 2026 Ishan Khanna | Data Engineer</p>
+  <p>© 2026 Ishan Khanna | Senior Data Engineer</p>
 </footer>
 
 </body>
