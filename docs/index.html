@@ -270,3 +270,275 @@
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ishan Khanna | Senior Data Engineer</title>
+
+  <style>
+    :root {
+      --primary: #0a2540;
+      --accent: #2563eb;
+      --bg: #f7f9fc;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: #222;
+      line-height: 1.55;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), #133b6f);
+      color: #fff;
+      padding: 55px 20px; /* reduced */
+      text-align: center;
+      animation: fadeDown 0.6s ease;
+    }
+
+    header h1 {
+      font-size: 36px;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      font-size: 17px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .cta {
+      margin-top: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #ffffff;
+      color: var(--primary);
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #e5edff;
+      transform: translateY(-2px);
+    }
+
+    nav {
+      background: #ffffff;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 22px;
+      margin: 0;
+      padding: 10px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 45px 20px; /* reduced section spacing */
+      animation: fadeUp 0.6s ease;
+    }
+
+    h2 {
+      border-bottom: 3px solid var(--accent);
+      display: inline-block;
+      padding-bottom: 5px;
+      margin-bottom: 25px;
+      font-size: 24px;
+    }
+
+    .job, .skill-box {
+      background: #fff;
+      padding: 22px;
+      border-radius: 10px;
+      box-shadow: 0 5px 14px rgba(0,0,0,0.08);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .job:hover, .skill-box:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 9px 20px rgba(0,0,0,0.12);
+    }
+
+    .job {
+      margin-bottom: 18px; /* tighter */
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 14px;
+    }
+
+    footer {
+      background: var(--primary);
+      color: #fff;
+      text-align: center;
+      padding: 25px 20px;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #93c5fd;
+      text-decoration: none;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-15px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Ishan Khanna</h1>
+  <p>
+    Senior Data Engineer with <strong>5+ years of experience</strong> (since Aug 2020) in building
+    scalable data pipelines and enterprise automation using
+    <strong>PySpark, Spark-SQL, Apache Spark, Airflow, SQL, Python</strong>,
+    and cloud platforms across Azure and GCP.
+  </p>
+
+  <div class="cta">
+    <a class="btn" href="resume/Ishan_Khanna_Resume.pdf" download>
+      ⬇ Download Resume (PDF)
+    </a>
+  </div>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#highlights">Highlights</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section id="experience">
+  <h2>Professional Experience</h2>
+
+  <div class="job">
+    <h3>Senior Data Engineer — IBM</h3>
+    <p><strong>Jan 2025 – Present | Noida, India</strong></p>
+    <ul>
+      <li>Migrated month-end processing frameworks to Spark-SQL and PySpark.</li>
+      <li>Improved scalability and reliability through enhanced validations.</li>
+      <li>Monitored automated workflows on Linux/UNIX servers.</li>
+      <li>Worked on critical process transition and decommissioning.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <h3>Associate — Cognizant Technology Solutions</h3>
+    <p><strong>Nov 2023 – Jan 2025 | Gurgaon, India</strong></p>
+    <ul>
+      <li>Automated month-end processing using Python, Spark, and HQL.</li>
+      <li>Optimized execution via multithreading and parallelism.</li>
+      <li>Built ML-powered metadata search using TF-IDF and Word2Vec.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <h3>Associate Software Engineer II — Optum Global Solutions</h3>
+    <p><strong>May 2022 – Sep 2023 | Noida, India</strong></p>
+    <ul>
+      <li>Designed PySpark and Spark-SQL pipelines.</li>
+      <li>Deployed ML models using Azure Data Factory.</li>
+      <li>Delivered automation saving $1.5M+.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <h3>Business Analyst — EXL Services</h3>
+    <p><strong>Aug 2020 – May 2022 | Noida, India</strong></p>
+    <ul>
+      <li>Developed reports using Hive, PySpark, Python, and SAS.</li>
+      <li>Managed enterprise data sources and production runs.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills & Technologies</h2>
+
+  <div class="skills-grid">
+    <div class="skill-box">Python & SQL</div>
+    <div class="skill-box">Apache Spark, PySpark & Spark-SQL</div>
+    <div class="skill-box">Apache Airflow & DAG Development</div>
+    <div class="skill-box">Azure Data Factory & ML Studio</div>
+    <div class="skill-box">BigQuery & Google Cloud Storage (GCS)</div>
+    <div class="skill-box">ETL, Data Pipelines & Data Lineage</div>
+    <div class="skill-box">Docker, Kubernetes & CI/CD</div>
+    <div class="skill-box">Linux / UNIX Automation</div>
+  </div>
+</section>
+
+<section id="highlights">
+  <h2>Key Highlights</h2>
+  <ul>
+    <li>Enterprise-grade month-end automation</li>
+    <li>Metadata and ML-driven data discovery platforms</li>
+    <li>Azure + GCP based data engineering solutions</li>
+    <li>High-impact automation saving $1.5M+ annually</li>
+  </ul>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <p><strong>MCA</strong> — Jamia Millia Islamia (2017 – 2020)</p>
+  <p><strong>BCA</strong> — Teerthanker Mahaveer University (2014 – 2017)</p>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>📍 Gurgaon, India</p>
+  <p>📞 Phone: +91 97585 99025</p>
+  <p>📧 Email: your-email@example.com</p>
+  <p>
+    🔗 LinkedIn:
+    <a href="https://www.linkedin.com/in/ishan-khanna-778789171/" target="_blank">
+      linkedin.com/in/ishan-khanna-778789171
+    </a>
+  </p>
+</section>
+
+<footer>
+  <p>© 2026 Ishan Khanna | Senior Data Engineer</p>
+</footer>
+
+</body>
+</html>
